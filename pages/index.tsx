@@ -23,7 +23,7 @@ const Home: NextPage<Props> = ({ images }) => {
 			<Head>
 				<title>Digital Art Worm</title>
 				<meta name="description" content="A Collective Art!" />
-				<link rel="icon" href="/favicon.ico" />
+				<link rel="icon" href="https://fav.farm/%F0%9F%96%BC%EF%B8%8F" />
 			</Head>
 
 			<main>
