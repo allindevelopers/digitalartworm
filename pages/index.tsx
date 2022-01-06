@@ -31,7 +31,7 @@ const Home: NextPage<Props> = ({ images }) => {
 					{images.map((image) => (
 						<li key={image}>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={image} alt="" width={425} height={300} />
+							<img src={image} alt="" width={425} height={300} loading="lazy" />
 						</li>
 					))}
 				</ul>
