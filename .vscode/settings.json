@@ -1,5 +1,9 @@
 {
 	"editor.formatOnSave": true,
+	"editor.guides.indentation": false,
 	"editor.renderWhitespace": "all",
-	"editor.guides.indentation": false
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[typescript][typescriptreact][javascript][javascriptreact][html][json][jsonc][md]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

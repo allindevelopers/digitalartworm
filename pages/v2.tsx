@@ -1,24 +1,28 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import fs from "fs";
+import glob from "glob";
 
 type Props = {
 	images: Array<{
-		image: string;
-		piece: string;
+		path: string;
+		user: string;
+		info: string;
 	}>;
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-	const seasonPath = "daw/daw_s02";
-	const rounds = fs.readdirSync(`./public/${seasonPath}`);
-	const images = rounds.flatMap((round) => {
-		const roundPieces = fs.readdirSync(`./public/${seasonPath}/${round}`);
-		return roundPieces.map((piece) => ({
-			image: `/${seasonPath}/${round}/${piece}`,
-			piece,
-		}));
-	});
+	const images = glob
+		.sync("./public/pieces/**.png")
+		.filter((piece) => piece.includes("/S02"))
+		.map((piece) => {
+			const path = piece.replace("./public", "");
+			const [_, _pieces, info, user, _ext] = path
+				.replace(".", "/")
+				.replace("_", "/")
+				.split("/");
+
+			return { path, user, info };
+		});
 
 	return { props: { images } };
 };
@@ -33,10 +37,10 @@ const Home: NextPage<Props> = ({ images }) => {
 			</Head>
 
 			<ul className="flex min-w-max">
-				{images.map(({ image, piece }) => (
-					<li key={image} id={piece} onClick={() => (location.hash = piece)}>
+				{images.map(({ path, info, user }) => (
+					<li key={info} id={info} onClick={() => (location.hash = info)}>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={image} alt="" width={640} height={480} loading="lazy" />
+						<img src={path} alt="" width={640} height={480} loading="lazy" />
 					</li>
 				))}
 			</ul>
