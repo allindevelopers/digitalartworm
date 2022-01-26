@@ -3,7 +3,10 @@ import Head from "next/head";
 import fs from "fs";
 
 type Props = {
-	images: string[];
+	images: Array<{
+		image: string;
+		piece: string;
+	}>;
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
@@ -11,7 +14,10 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 	const rounds = fs.readdirSync(`./public/${seasonPath}`);
 	const images = rounds.flatMap((round) => {
 		const roundPieces = fs.readdirSync(`./public/${seasonPath}/${round}`);
-		return roundPieces.map((piece) => `/${seasonPath}/${round}/${piece}`);
+		return roundPieces.map((piece) => ({
+			image: `/${seasonPath}/${round}/${piece}`,
+			piece,
+		}));
 	});
 
 	return { props: { images } };
@@ -28,8 +34,8 @@ const Home: NextPage<Props> = ({ images }) => {
 
 			<main>
 				<ul>
-					{images.map((image) => (
-						<li key={image}>
+					{images.map(({ image, piece }) => (
+						<li key={image} id={piece} onClick={() => (location.hash = piece)}>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img src={image} alt="" width={425} height={300} loading="lazy" />
 						</li>
