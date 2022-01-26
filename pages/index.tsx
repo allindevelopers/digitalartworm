@@ -22,9 +22,32 @@ const Home: NextPage<Props> = ({ images }) => {
 			<main>
 				<ul>
 					{images.map(({ path, info, user }) => (
-						<li key={info} id={info} onClick={() => (location.hash = info)}>
+						<li
+							key={info}
+							id={info}
+							onClick={() => (location.hash = info)}
+							className="relative group"
+						>
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={path} alt="" width={425} height={300} loading="lazy" />
+							<img
+								src={path}
+								alt=""
+								width={425}
+								height={300}
+								loading="lazy"
+								className="cursor-pointer"
+							/>
+							<div
+								className={[
+									"absolute bottom-1 left-1 rounded-full px-2 py-1",
+									"bg-black/50 text-white text-xs font-mono",
+									"opacity-0 group-hover:opacity-100 transition-opacity duration-500",
+								].join(" ")}
+							>
+								{user.toLocaleLowerCase()}
+								<span> / </span>
+								{info.replace("R", " R").replace("P", " P").toLocaleLowerCase()}
+							</div>
 						</li>
 					))}
 				</ul>
