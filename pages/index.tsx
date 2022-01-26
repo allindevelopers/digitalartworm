@@ -26,7 +26,11 @@ const Home: NextPage<Props> = ({ images }) => {
 						<li key={info} id={info} className="relative group">
 							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img src={path} alt="" width={425} height={300} loading="lazy" />
-							<PieceInfo info={info} user={user} className="bottom-1 left-1" />
+							<PieceInfo
+								info={info}
+								user={user}
+								className="absolute bottom-1 left-1"
+							/>
 						</li>
 					))}
 				</ul>

@@ -15,7 +15,7 @@ export function PieceInfo({
 			className={[
 				"bg-black/50 text-white text-xs font-mono",
 				"opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-				"absolute rounded-full px-2 py-1",
+				"inline-block rounded-full px-2 py-1",
 				className,
 			].join(" ")}
 		>
