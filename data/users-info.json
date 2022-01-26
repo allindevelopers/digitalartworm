@@ -1,14 +1,38 @@
 [
-	{ "id": "97496", "name": "Lymos" },
-	{ "id": "670475", "name": "DSTKreek" },
-	{ "id": "455201", "name": "vishinel" },
-	{ "id": "368941", "name": "Jankar" },
-	{ "id": "82910", "name": "mirc3a" },
-	{ "id": "510723", "name": "Jonothan" },
-	{ "id": "603433", "name": "kowton" },
-	{ "id": "684218", "name": "_Raphael_" },
-	{ "id": "183319", "name": "trolic" },
-	{ "id": "677510", "name": "_ViorelDodon_" },
-	{ "id": "43097", "name": "ElMoldovano" },
-	{ "id": "728266", "name": "artmonster" }
+	{ "tmdId": "97496", "name": "Lymos" },
+	{ "tmdId": "670475", "name": "DSTKreek" },
+	{ "tmdId": "455201", "name": "vishinel" },
+	{ "tmdId": "368941", "name": "Jankar" },
+	{ "tmdId": "6544", "name": "Spider" },
+	{ "tmdId": "510723", "name": "Jonothan" },
+	{ "tmdId": "603433", "name": "kowton" },
+	{ "tmdId": "684218", "name": "Raphael" },
+	{ "tmdId": "677510", "name": "ViorelDodon" },
+	{ "tmdId": "43097", "name": "ElMoldovano" },
+	{ "tmdId": "728266", "name": "artmonster" },
+	{
+		"tmdId": "82910",
+		"name": "mirc3a",
+		"social": { "url": "https://twitter.com/mirceaiurcu", "handle": "@mirceaiurcu" }
+	},
+	{
+		"tmdId": "183319",
+		"name": "trolic",
+		"social": { "url": "https://twitter.com/iamandrewluca", "handle": "@iamandrewluca" }
+	},
+	{
+		"tmdId": "102061",
+		"name": "rustik",
+		"social": { "url": "https://twitter.com/rustik_hdr", "handle": "@rustik_hdr" }
+	},
+	{
+		"tmdId": "27956",
+		"name": "ceekay",
+		"social": { "url": "https://twitter.com/ceekaysickart", "handle": "@ceekaysickart" }
+	},
+	{
+		"tmdId": "6901",
+		"name": "PerSeM",
+		"social": { "url": "https://twitter.com/GainaRoman", "handle": "@GainaRoman" }
+	}
 ]

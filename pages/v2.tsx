@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { getPiecesInfo } from "../utils";
+import { PieceInfo } from "../components/piece-info.component";
 
 type Props = {
 	images: ReturnType<typeof getPiecesInfo>;
@@ -21,32 +22,10 @@ const Home: NextPage<Props> = ({ images }) => {
 
 			<ul className="flex min-w-max">
 				{images.map(({ path, info, user }) => (
-					<li
-						key={info}
-						id={info}
-						onClick={() => (location.hash = info)}
-						className="relative group"
-					>
+					<li key={info} id={info} className="relative group">
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img
-							src={path}
-							alt=""
-							width={640}
-							height={480}
-							loading="lazy"
-							className="cursor-pointer"
-						/>
-						<div
-							className={[
-								"absolute bottom-1 left-1 rounded-full px-2 py-1",
-								"bg-black/50 text-white text-xs font-mono",
-								"opacity-0 group-hover:opacity-100 transition-opacity duration-500",
-							].join(" ")}
-						>
-							{user.toLocaleLowerCase()}
-							<span> / </span>
-							{info.replace("R", " R").replace("P", " P").toLocaleLowerCase()}
-						</div>
+						<img src={path} alt="" width={640} height={480} loading="lazy" />
+						<PieceInfo info={info} user={user} className="bottom-1 left-1" />
 					</li>
 				))}
 			</ul>
