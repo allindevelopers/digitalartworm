@@ -1,31 +1,14 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-import glob from "glob";
+import { getPiecesInfo } from "../utils";
 
 type Props = {
-	images: Array<{
-		path: string;
-		user: string;
-		info: string;
-	}>;
+	images: ReturnType<typeof getPiecesInfo>;
 };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-	const images = glob
-		.sync("./public/pieces/**.png")
-		.filter((piece) => piece.includes("/S02"))
-		.map((piece) => {
-			const path = piece.replace("./public", "");
-			const [_, _pieces, info, user, _ext] = path
-				.replace(".", "/")
-				.replace("_", "/")
-				.split("/");
-
-			return { path, user, info };
-		});
-
-	return { props: { images } };
-};
+export const getStaticProps: GetStaticProps<Props> = async () => ({
+	props: { images: getPiecesInfo((piece) => piece.includes("/S02")) },
+});
 
 const Home: NextPage<Props> = ({ images }) => {
 	return (
