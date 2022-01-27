@@ -8,7 +8,7 @@ export function Menu() {
 				<span> / </span>
 				<span>A Collective Art</span>
 			</div>
-			<ul className="flex gap-2 font-mono text-sm">
+			<ul className="flex flex-wrap gap-2 font-mono text-sm">
 				<li className="underline">
 					<Link href="/">Season 1</Link>
 				</li>

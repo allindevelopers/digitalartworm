@@ -14,7 +14,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => ({
 
 const Home: NextPage<Props> = ({ images }) => {
 	return (
-		<div className="w-[400px] mx-auto">
+		<div className="sm:w-[400px] mx-auto">
 			<Head>
 				<title>Digital Art Worm</title>
 				<meta name="description" content="A Collective Art!" />
@@ -29,7 +29,14 @@ const Home: NextPage<Props> = ({ images }) => {
 					{images.map(({ path, info, user }) => (
 						<li key={info} id={info} className="relative group">
 							{/* eslint-disable-next-line @next/next/no-img-element */}
-							<img src={path} alt="" width={400} height={300} loading="lazy" />
+							<img
+								src={path}
+								alt=""
+								width={400}
+								height={300}
+								loading="lazy"
+								className="mx-auto"
+							/>
 							<PieceInfo
 								info={info}
 								user={user}
