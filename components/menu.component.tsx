@@ -33,7 +33,7 @@ export function Menu() {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						topic.md
+						topicmd.com
 					</a>
 				</li>
 			</ul>
