@@ -1,5 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
+import { Menu } from "../components/menu.component";
 import { PieceInfo } from "../components/piece-info.component";
 import { getPiecesInfo } from "../utils";
 
@@ -21,6 +22,9 @@ const Home: NextPage<Props> = ({ images }) => {
 			</Head>
 
 			<main>
+				<div className="sticky top-0 pl-2 z-10 bg-white/80">
+					<Menu />
+				</div>
 				<ul>
 					{images.map(({ path, info, user }) => (
 						<li key={info} id={info} className="relative group">
