@@ -1,53 +1,171 @@
 [
-	{ "tmdId": "97496", "name": "Lymos" },
-	{ "tmdId": "670475", "name": "DSTKreek" },
-	{ "tmdId": "455201", "name": "vishinel" },
-	{ "tmdId": "368941", "name": "Jankar" },
-	{ "tmdId": "6544", "name": "Spider" },
-	{ "tmdId": "510723", "name": "Jonothan" },
-	{ "tmdId": "603433", "name": "kowton" },
-	{ "tmdId": "684218", "name": "Raphael" },
-	{ "tmdId": "677510", "name": "ViorelDodon" },
-	{ "tmdId": "43097", "name": "ElMoldovano" },
-	{ "tmdId": "728266", "name": "artmonster" },
 	{
-		"tmdId": "82910",
+		"name": "Lymos",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=97496",
+				"handle": "Lymos"
+			}
+		]
+	},
+	{
+		"name": "DSTKreek",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=670475",
+				"handle": "DSTKreek"
+			}
+		]
+	},
+	{
+		"name": "vishinel",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=455201",
+				"handle": "vishinel"
+			}
+		]
+	},
+	{
+		"name": "Jankar",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=368941",
+				"handle": "Jankar"
+			}
+		]
+	},
+	{
+		"name": "Spider",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=6544",
+				"handle": "Spider"
+			}
+		]
+	},
+	{
+		"name": "Jonothan",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=510723",
+				"handle": "Jonothan"
+			}
+		]
+	},
+	{
+		"name": "kowton",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=603433",
+				"handle": "kowton"
+			}
+		]
+	},
+	{
+		"name": "Raphael",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=684218",
+				"handle": "Raphael"
+			}
+		]
+	},
+	{
+		"name": "ViorelDodon",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=677510",
+				"handle": "ViorelDodon"
+			}
+		]
+	},
+	{
+		"name": "ElMoldovano",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=43097",
+				"handle": "ElMoldovano"
+			}
+		]
+	},
+	{
+		"name": "artmonster",
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=728266",
+				"handle": "artmonster"
+			}
+		]
+	},
+	{
 		"name": "mirc3a",
-		"social": {
-			"url": "https://twitter.com/mirceaiurcu",
-			"handle": "@mirceaiurcu"
-		}
+		"socials": [
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=82910",
+				"handle": "DarthRevan"
+			}
+		]
 	},
 	{
-		"tmdId": "183319",
 		"name": "trolic",
-		"social": {
-			"url": "https://twitter.com/iamandrewluca",
-			"handle": "@iamandrewluca"
-		}
+		"socials": [
+			{
+				"url": "https://twitter.com/iamandrewluca",
+				"handle": "@iamandrewluca"
+			},
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=183319",
+				"handle": "trolic"
+			}
+		]
 	},
 	{
-		"tmdId": "102061",
 		"name": "rustik",
-		"social": {
-			"url": "https://twitter.com/rustik_hdr",
-			"handle": "@rustik_hdr"
-		}
+		"socials": [
+			{
+				"url": "https://twitter.com/rustik_hdr",
+				"handle": "@rustik_hdr"
+			},
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=102061",
+				"handle": "rustik"
+			}
+		]
 	},
 	{
-		"tmdId": "27956",
 		"name": "ceekay",
-		"social": {
-			"url": "https://twitter.com/ceekaysickart",
-			"handle": "@ceekaysickart"
-		}
+		"socials": [
+			{
+				"url": "https://twitter.com/ceekaysickart",
+				"handle": "@ceekaysickart"
+			},
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=27956",
+				"handle": "ceekay"
+			}
+		]
 	},
 	{
-		"tmdId": "6901",
 		"name": "PerSeM",
-		"social": {
-			"url": "https://twitter.com/GainaRoman",
-			"handle": "@GainaRoman"
-		}
+		"socials": [
+			{
+				"url": "https://twitter.com/GainaRoman",
+				"handle": "@GainaRoman"
+			},
+			{
+				"url": "https://www.topicmd.com/userdetails.php?id=6901",
+				"handle": "PerSeM"
+			}
+		]
+	},
+	{
+		"name": "Iarik",
+		"socials": [
+			{
+				"url": "https://topicmd.com/userdetails.php?id=17341",
+				"handle": "Iarik"
+			}
+		]
 	}
 ]
