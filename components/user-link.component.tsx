@@ -2,7 +2,9 @@ import usersInfo from "../data/users-info.json";
 
 export function UserLink({ user }: { user: string }) {
 	const lowerCaseUser = user.toLowerCase();
-	const userInfo = usersInfo.find((info) => info.name.toLowerCase() === lowerCaseUser);
+	const userInfo = usersInfo.find(
+		(info) => info.name.toLowerCase() === lowerCaseUser,
+	);
 
 	if (!userInfo) return <span>{lowerCaseUser}</span>;
 

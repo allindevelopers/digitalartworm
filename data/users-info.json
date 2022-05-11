@@ -13,26 +13,41 @@
 	{
 		"tmdId": "82910",
 		"name": "mirc3a",
-		"social": { "url": "https://twitter.com/mirceaiurcu", "handle": "@mirceaiurcu" }
+		"social": {
+			"url": "https://twitter.com/mirceaiurcu",
+			"handle": "@mirceaiurcu"
+		}
 	},
 	{
 		"tmdId": "183319",
 		"name": "trolic",
-		"social": { "url": "https://twitter.com/iamandrewluca", "handle": "@iamandrewluca" }
+		"social": {
+			"url": "https://twitter.com/iamandrewluca",
+			"handle": "@iamandrewluca"
+		}
 	},
 	{
 		"tmdId": "102061",
 		"name": "rustik",
-		"social": { "url": "https://twitter.com/rustik_hdr", "handle": "@rustik_hdr" }
+		"social": {
+			"url": "https://twitter.com/rustik_hdr",
+			"handle": "@rustik_hdr"
+		}
 	},
 	{
 		"tmdId": "27956",
 		"name": "ceekay",
-		"social": { "url": "https://twitter.com/ceekaysickart", "handle": "@ceekaysickart" }
+		"social": {
+			"url": "https://twitter.com/ceekaysickart",
+			"handle": "@ceekaysickart"
+		}
 	},
 	{
 		"tmdId": "6901",
 		"name": "PerSeM",
-		"social": { "url": "https://twitter.com/GainaRoman", "handle": "@GainaRoman" }
+		"social": {
+			"url": "https://twitter.com/GainaRoman",
+			"handle": "@GainaRoman"
+		}
 	}
 ]
